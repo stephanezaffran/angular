@@ -1,0 +1,11 @@
+---- directives  : ng generate directive border-card ---- 
+
+composants
+directives d'attributs
+directives structurelles 
+
+
+---- pipe -----
+
+| date | uppercase .....
+
