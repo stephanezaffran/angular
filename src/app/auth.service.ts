@@ -7,6 +7,7 @@ import { delay, Observable, of, tap } from "rxjs";
 export class AuthService {
   isLoggedIn: boolean = false;
   redirectUrl: string;
+ 
 
   constructor() {}
 
@@ -21,4 +22,5 @@ export class AuthService {
   logout() {
     this.isLoggedIn = false;
   }
+
 }
