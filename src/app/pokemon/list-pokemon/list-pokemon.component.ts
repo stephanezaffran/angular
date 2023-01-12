@@ -9,6 +9,7 @@ import { EditPokemonComponent } from "../edit-pokemon/edit-pokemon.component";
   templateUrl: "./list-pokemon.component.html",
 })
 export class ListPokemonComponent implements OnInit {
+   test:string = "/add";
   pokemonList: Pokemon[];
   pokemon: Pokemon;
 
