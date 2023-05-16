@@ -19,6 +19,7 @@ export class AuthService {
       tap((isLoggedIn) => (this.isLoggedIn = isLoggedIn))
     );
   }
+  
   logout() {
     this.isLoggedIn = false;
   }

@@ -7,6 +7,7 @@ import { Pokemon } from "./pokemon";
 @Injectable()
 // { providedIn: "root",}  on ne veut pas le service dispo dans tout le projet
 export class PokemonService {
+
   constructor(
     private http: HttpClient,
     private inMemoryDataService: InMemoryDataService
@@ -27,7 +28,7 @@ export class PokemonService {
       catchError((error) => this.handleError(error, undefined))
     );
   }
-
+  
   updatePokemon(pokemon: Pokemon): Observable<null> {
     const httpOption = {
       headers: new HttpHeaders({ "content-type": "application/json" }),

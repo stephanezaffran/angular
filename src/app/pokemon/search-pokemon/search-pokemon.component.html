@@ -3,10 +3,10 @@
     <div class="card">
       <div class="card-content">
         <div class="input-field">
-            <!-- (keyup)="search(searchBox.value)" -->
+          <!--  -->
           <input
             #searchBox
-            
+            (keyup)="search(searchBox.value)"
             placeholder="rechercher un pokemon"
           />
         </div>
@@ -19,9 +19,10 @@
           >
             {{ pokemon.name }}
           </a>
+
+       
         </div>
       </div>
     </div>
   </div>
 </div>
-
